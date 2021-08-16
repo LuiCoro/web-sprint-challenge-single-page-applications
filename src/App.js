@@ -36,10 +36,10 @@ const App = () => {
                     <h1>Lambda Eats</h1>
                     <nav>
                         <Link to='/'>
-                            <button>Home</button>
+                            <button id='Home'>Home</button>
                         </Link>
-                        <Link to='/help'>
-                            <button>Help</button>
+                        <Link to='/pizza'>
+                            <button id='order-pizza'>Order Pizza</button>
                         </Link>
                     </nav>
                 </div>

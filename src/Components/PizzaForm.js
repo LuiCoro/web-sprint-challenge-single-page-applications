@@ -12,9 +12,15 @@ const HomeComponent = (props) => {
                 <h2>Build Your Own Pizza</h2>
             </header>
             <h1>Build Your Own Pizza</h1>
+
+            <labrl>
+                <input type='text' id='name-input'  placeholder='Enter Your Name' />
+            </labrl>
+
+
             <h2>Choice of Size</h2>
 
-            <select>
+            <select id='size-dropdown'>
                 <option value="select">Select</option>
                 <option value="personal">6" Personal</option>
                 <option value="Small">10" Small</option>
@@ -37,12 +43,12 @@ const HomeComponent = (props) => {
             </div>
             <div>
                 <label>
-                    <input type='radio'/> BBQ Sauce
+                    <input type='radio' name='bbq_sauce' /> BBQ Sauce
                 </label>
             </div>
             <div>
                 <label>
-                    <input type='radio'/> Spinach Alfredo
+                    <input type='radio' name='alfredo_sauce'/> Spinach Alfredo
                 </label>
             </div>
 
@@ -52,10 +58,10 @@ const HomeComponent = (props) => {
             <div className='toppingsChecklist'>
                 <div>
                     <label>
-                        <input type='checkbox'/> Pepperoni
+                        <input type='checkbox' name='pepperoni' /> Pepperoni
                     </label>{'         '}{'                   '}{'               '}{'                      '}
                     <label>
-                        <input type='checkbox'/> Diced Tomatoes
+                        <input type='checkbox' name='diced_tomatoes' /> Diced Tomatoes
                     </label>
                 </div>
 
@@ -63,10 +69,10 @@ const HomeComponent = (props) => {
 
                 <div>
                     <label>
-                        <input type='checkbox'/> Sauage
+                        <input type='checkbox' name='sausage' /> Sauage
                     </label>{'         '}{'                   '}{'               '}{'                      '}
                     <label>
-                        <input type='checkbox'/> Black Olives
+                        <input type='checkbox' name='olives' /> Black Olives
                     </label>
                 </div>
 
@@ -74,10 +80,10 @@ const HomeComponent = (props) => {
 
                 <div>
                     <label>
-                        <input type='checkbox'/> Candian Bacon
+                        <input type='checkbox' name='cana_bacon' /> Candian Bacon
                     </label>{'         '}{'                   '}{'               '}{'                      '}
                     <label>
-                        <input type='checkbox'/> Roasted Garlic
+                        <input type='checkbox' name='roasted_garlic' /> Roasted Garlic
                     </label>
                 </div>
 
@@ -88,12 +94,12 @@ const HomeComponent = (props) => {
             <div>
                 <h2>Special Instructions</h2>
 
-                <textarea placeholder='Add anything else?'/>
+                <textarea id='special-text' placeholder='Add anything else?'/>
             </div>
 
             <div>
-                <input type='number' placeholder='Quantity'/>
-                <button>Add To Order</button>
+                <input name='qunatity' type='number' placeholder='Quantity'/>
+                <button id='pizza-form'>Add To Order</button>
             </div>
 
         </div>
